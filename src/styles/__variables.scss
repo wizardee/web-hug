@@ -1,0 +1,278 @@
+:root {
+  --h-semantic-primary-background-normal-default: var(--h-palette-purple-500);
+  --h-semantic-primary-background-normal-hovered: var(--h-palette-purple-300);
+  --h-semantic-primary-background-normal-pressed: var(--h-palette-purple-700);
+  --h-semantic-primary-background-normal-selected: var(--h-palette-purple-600);
+  --h-semantic-primary-background-normal-disabled: var(--h-semantic-disabled-background-global-default);
+
+  --h-semantic-primary-background-strong-default: var(--h-palette-purple-400);
+  --h-semantic-primary-background-strong-hovered: var(--h-palette-purple-50);
+  --h-semantic-primary-background-strong-pressed: var(--h-palette-purple-200);
+  --h-semantic-primary-background-strong-selected: var(--h-palette-purple-100);
+  --h-semantic-primary-background-strong-disabled: var(--h-semantic-disabled-background-global-default);
+
+  --h-semantic-primary-foreground-global-default: var(--h-palette-purple-500);
+  --h-semantic-primary-foreground-global-hovered: var(--h-palette-purple-300);
+  --h-semantic-primary-foreground-global-pressed: var(--h-palette-purple-700);
+  --h-semantic-primary-foreground-global-selected: var(--h-palette-purple-400);
+  --h-semantic-primary-foreground-global-disabled: var(--h-semantic-disabled-foreground-global-default);
+
+  --h-semantic-primary-stroke-global-default: var(--h-palette-purple-500);
+  --h-semantic-primary-stroke-global-hovered: var(--h-palette-purple-300);
+  --h-semantic-primary-stroke-global-pressed: var(--h-palette-purple-900);
+  --h-semantic-primary-stroke-global-selected: var(--h-palette-purple-600);
+  --h-semantic-primary-stroke-global-disabled: var(--h-semantic-disabled-stroke-global-default);
+
+  --h-semantic-secondary-background-normal-default: var(--h-palette-neutral-980);
+  --h-semantic-secondary-background-normal-hovered: var(--h-palette-neutral-880);
+  --h-semantic-secondary-background-normal-pressed: var(--h-palette-neutral-760);
+  --h-semantic-secondary-background-normal-selected: var(--h-palette-neutral-800);
+  --h-semantic-secondary-background-normal-disabled: var(--h-semantic-disabled-background-global-default);
+
+  --h-semantic-secondary-background-strong-default: var(--h-palette-neutral-940);
+  --h-semantic-secondary-background-strong-hovered: var(--h-palette-neutral-840);
+  --h-semantic-secondary-background-strong-pressed: var(--h-palette-neutral-720);
+  --h-semantic-secondary-background-strong-selected: var(--h-palette-neutral-800);
+  --h-semantic-secondary-background-strong-disabled: var(--h-semantic-disabled-background-global-default);
+
+  --h-semantic-secondary-background-heavy-default: var(--h-palette-neutral-840);
+  --h-semantic-secondary-background-heavy-hovered: var(--h-palette-neutral-720);
+  --h-semantic-secondary-background-heavy-pressed: var(--h-palette-neutral-600);
+  --h-semantic-secondary-background-heavy-selected: var(--h-palette-neutral-680);
+  --h-semantic-secondary-background-heavy-disabled: var(--h-semantic-disabled-background-global-default);
+
+  --h-semantic-secondary-background-inverse-default: var(--h-palette-neutral-360);
+  --h-semantic-secondary-background-inverse-hovered: var(--h-palette-neutral-440);
+  --h-semantic-secondary-background-inverse-pressed: var(--h-palette-neutral-280);
+  --h-semantic-secondary-background-inverse-selected: var(--h-palette-neutral-320);
+  --h-semantic-secondary-background-inverse-disabled: var(--h-semantic-disabled-background-global-default);
+
+  --h-semantic-secondary-foreground-normal-default: var(--h-palette-neutral-120);
+  --h-semantic-secondary-foreground-normal-hovered: var(--h-palette-neutral-240);
+  --h-semantic-secondary-foreground-normal-pressed: var(--h-palette-neutral-360);
+  --h-semantic-secondary-foreground-normal-selected: var(--h-palette-neutral-280);
+  --h-semantic-secondary-foreground-normal-disabled: var(--h-semantic-disabled-foreground-global-default);
+
+  --h-semantic-secondary-foreground-strong-default: var(--h-palette-neutral-200);
+  --h-semantic-secondary-foreground-strong-hovered: var(--h-palette-neutral-320);
+  --h-semantic-secondary-foreground-strong-pressed: var(--h-palette-neutral-440);
+  --h-semantic-secondary-foreground-strong-selected: var(--h-palette-neutral-360);
+  --h-semantic-secondary-foreground-strong-disabled: var(--h-semantic-disabled-foreground-global-default);
+
+  --h-semantic-secondary-foreground-heavy-default: var(--h-palette-neutral-280);
+  --h-semantic-secondary-foreground-heavy-hovered: var(--h-palette-neutral-400);
+  --h-semantic-secondary-foreground-heavy-pressed: var(--h-palette-neutral-520);
+  --h-semantic-secondary-foreground-heavy-selected: var(--h-palette-neutral-440);
+  --h-semantic-secondary-foreground-heavy-disabled: var(--h-semantic-disabled-foreground-global-default);
+
+  --h-semantic-secondary-foreground-inverse-default: var(--h-palette-neutral-440);
+  --h-semantic-secondary-foreground-inverse-hovered: var(--h-palette-neutral-520);
+  --h-semantic-secondary-foreground-inverse-pressed: var(--h-palette-neutral-360);
+  --h-semantic-secondary-foreground-inverse-disabled: var(--h-semantic-disabled-foreground-global-default);
+
+  --h-semantic-secondary-stroke-normal-default: var(--h-palette-neutral-840);
+  --h-semantic-secondary-stroke-normal-hovered: var(--h-palette-neutral-680);
+  --h-semantic-secondary-stroke-normal-pressed: var(--h-palette-neutral-520);
+  --h-semantic-secondary-stroke-normal-selected: var(--h-palette-neutral-600);
+  --h-semantic-secondary-stroke-normal-disabled: var(--h-semantic-disabled-stroke-global-default);
+
+  --h-semantic-secondary-stroke-strong-default: var(--h-palette-neutral-760);
+  --h-semantic-secondary-stroke-strong-hovered: var(--h-palette-neutral-640);
+  --h-semantic-secondary-stroke-strong-pressed: var(--h-palette-neutral-520);
+  --h-semantic-secondary-stroke-strong-disabled: var(--h-semantic-disabled-stroke-global-default);
+
+  --h-semantic-secondary-stroke-heavy-default: var(--h-palette-neutral-680);
+  --h-semantic-secondary-stroke-heavy-hovered: var(--h-palette-neutral-560);
+  --h-semantic-secondary-stroke-heavy-pressed: var(--h-palette-neutral-440);
+  --h-semantic-secondary-stroke-heavy-disabled: var(--h-semantic-disabled-stroke-global-default);
+
+  --h-semantic-secondary-stroke-inverse-default: var(--h-palette-neutral-160);
+  --h-semantic-secondary-stroke-inverse-hovered: var(--h-palette-neutral-280);
+  --h-semantic-secondary-stroke-inverse-pressed: var(--h-palette-neutral-400);
+
+  --h-semantic-cta-background-normal-default: var(--h-palette-green-500);
+  --h-semantic-cta-background-normal-hovered: var(--h-palette-green-200);
+  --h-semantic-cta-background-normal-pressed: var(--h-palette-green-800);
+  --h-semantic-cta-background-normal-selected: var(--h-palette-green-600);
+  --h-semantic-cta-background-normal-disabled: var(--h-semantic-disabled-background-global-default);
+
+  --h-semantic-cta-background-strong-default: var(--h-palette-green-500);
+  --h-semantic-cta-background-strong-hovered: var(--h-palette-green-50);
+  --h-semantic-cta-background-strong-pressed: var(--h-palette-green-200);
+  --h-semantic-cta-background-strong-selected: var(--h-palette-green-100);
+  --h-semantic-cta-background-strong-disabled: var(--h-semantic-disabled-background-global-default);
+
+  --h-semantic-cta-foreground-global-default: var(--h-palette-green-500);
+  --h-semantic-cta-foreground-global-hovered: var(--h-palette-green-200);
+  --h-semantic-cta-foreground-global-pressed: var(--h-palette-green-800);
+  --h-semantic-cta-foreground-global-selected: var(--h-palette-green-600);
+  --h-semantic-cta-foreground-global-disabled: var(--h-semantic-disabled-foreground-global-default);
+
+  --h-semantic-cta-stroke-global-default: var(--h-palette-green-700);
+  --h-semantic-cta-stroke-global-hovered: var(--h-palette-green-400);
+  --h-semantic-cta-stroke-global-pressed: var(--h-palette-green-900);
+  --h-semantic-cta-stroke-global-selected: var(--h-palette-green-800);
+  --h-semantic-cta-stroke-global-disabled: var(--h-semantic-disabled-stroke-global-default);
+
+  --h-semantic-link-global-global-default: var(--h-palette-blue-600);
+  --h-semantic-link-global-global-hovered: var(--h-palette-blue-400);
+  --h-semantic-link-global-global-pressed: var(--h-palette-blue-800);
+
+  --h-semantic-error-global-global-default: var(--h-palette-red-600);
+  --h-semantic-error-global-global-hovered: var(--h-palette-red-400);
+  --h-semantic-error-global-global-pressed: var(--h-palette-red-800);
+
+  --h-semantic-warning-global-global-default: var(--h-palette-orange-600);
+  --h-semantic-warning-global-global-hovered: var(--h-palette-orange-400);
+  --h-semantic-warning-global-global-pressed: var(--h-palette-orange-800);
+
+  --h-semantic-info-global-global-default: var(--h-palette-purple-600);
+  --h-semantic-info-global-global-hovered: var(--h-palette-purple-400);
+  --h-semantic-info-global-global-pressed: var(--h-palette-purple-800);
+
+  --h-semantic-white-global-global-default: var(--h-palette-neutral-white);
+  --h-semantic-black-global-global-default: var(--h-palette-neutral-black);
+
+  --h-semantic-disabled-background-global-default: var(--h-palette-neutral-880);
+  --h-semantic-disabled-foreground-global-default: var(--h-palette-neutral-760);
+  --h-semantic-disabled-stroke-global-default: var(--h-palette-neutral-880);
+
+  --h-semantic-focused-global-global-default: var(--h-palette-neutral-80);
+
+  /** sizes: static */
+  --h-sizing-height-xlg: 2.5rem;
+  --h-sizing-height-lg: 2.25rem;
+  --h-sizing-height-md: 2rem;
+  --h-sizing-height-sm: 1.75rem;
+  --h-sizing-height-xsm: 1.5rem;
+
+  --h-shadow-normal: rgba(0, 0, 0, 0.04);
+  --h-shadow-heavy: rgba(0, 0, 0, 0.08);
+  --h-shadow-strong: rgba(0, 0, 0, 0.12)
+
+}
+
+:root[theme=g100] {
+  --h-semantic-primary-background-normal-default: var(--h-palette-purple-600);
+  --h-semantic-primary-background-normal-hovered: var(--h-palette-purple-400);
+  --h-semantic-primary-background-normal-pressed: var(--h-palette-purple-900);
+  --h-semantic-primary-background-normal-selected: var(--h-palette-purple-700);
+
+  --h-semantic-primary-background-strong-default: var(--h-palette-purple-400);
+  --h-semantic-primary-background-strong-hovered: var(--h-palette-purple-500);
+  --h-semantic-primary-background-strong-pressed: var(--h-palette-purple-900);
+  --h-semantic-primary-background-strong-selected: var(--h-palette-purple-700);
+
+  --h-semantic-primary-foreground-global-default: var(--h-palette-purple-100);
+  --h-semantic-primary-foreground-global-hovered: var(--h-palette-purple-200);
+  --h-semantic-primary-foreground-global-pressed: var(--h-palette-purple-400);
+  --h-semantic-primary-foreground-global-selected: var(--h-palette-purple-300);
+
+  --h-semantic-primary-stroke-global-default: var(--h-palette-purple-100);
+  --h-semantic-primary-stroke-global-hovered: var(--h-palette-purple-400);
+  --h-semantic-primary-stroke-global-pressed: var(--h-palette-purple-900);
+  --h-semantic-primary-stroke-global-selected: var(--h-palette-purple-700);
+
+  --h-semantic-secondary-background-normal-default: var(--h-palette-neutral-100);
+  --h-semantic-secondary-background-normal-hovered: var(--h-palette-neutral-240);
+  --h-semantic-secondary-background-normal-pressed: var(--h-palette-neutral-360);
+  --h-semantic-secondary-background-normal-selected: var(--h-palette-neutral-280);
+
+  --h-semantic-secondary-background-strong-default: var(--h-palette-neutral-160);
+  --h-semantic-secondary-background-strong-hovered: var(--h-palette-neutral-280);
+  --h-semantic-secondary-background-strong-pressed: var(--h-palette-neutral-400);
+  --h-semantic-secondary-background-strong-selected: var(--h-palette-neutral-320);
+
+  --h-semantic-secondary-background-heavy-default: var(--h-palette-neutral-240);
+  --h-semantic-secondary-background-heavy-hovered: var(--h-palette-neutral-360);
+  --h-semantic-secondary-background-heavy-pressed: var(--h-palette-neutral-480);
+  --h-semantic-secondary-background-heavy-selected: var(--h-palette-neutral-400);
+
+  --h-semantic-secondary-background-inverse-default: var(--h-palette-neutral-560);
+  --h-semantic-secondary-background-inverse-hovered: var(--h-palette-neutral-440);
+  --h-semantic-secondary-background-inverse-pressed: var(--h-palette-neutral-320);
+  --h-semantic-secondary-background-inverse-selected: var(--h-palette-neutral-360);
+  --h-semantic-secondary-background-inverse-disabled: var(--h-semantic-disabled-background-global-default);
+
+  --h-semantic-secondary-foreground-normal-default: var(--h-palette-neutral-880);
+  --h-semantic-secondary-foreground-normal-hovered: var(--h-palette-neutral-760);
+  --h-semantic-secondary-foreground-normal-pressed: var(--h-palette-neutral-640);
+  --h-semantic-secondary-foreground-normal-selected: var(--h-palette-neutral-720);
+
+  --h-semantic-secondary-foreground-strong-default: var(--h-palette-neutral-800);
+  --h-semantic-secondary-foreground-strong-hovered: var(--h-palette-neutral-680);
+  --h-semantic-secondary-foreground-strong-pressed: var(--h-palette-neutral-560);
+  --h-semantic-secondary-foreground-strong-selected: var(--h-palette-neutral-640);
+
+  --h-semantic-secondary-foreground-heavy-default: var(--h-palette-neutral-720);
+  --h-semantic-secondary-foreground-heavy-hovered: var(--h-palette-neutral-600);
+  --h-semantic-secondary-foreground-heavy-pressed: var(--h-palette-neutral-480);
+  --h-semantic-secondary-foreground-heavy-selected: var(--h-palette-neutral-560);
+
+  --h-semantic-secondary-foreground-inverse-default: var(--h-palette-neutral-640);
+  --h-semantic-secondary-foreground-inverse-hovered: var(--h-palette-neutral-600);
+  --h-semantic-secondary-foreground-inverse-pressed: var(--h-palette-neutral-560);
+
+  --h-semantic-secondary-stroke-normal-default: var(--h-palette-neutral-400);
+  --h-semantic-secondary-stroke-normal-hovered: var(--h-palette-neutral-560);
+  --h-semantic-secondary-stroke-normal-pressed: var(--h-palette-neutral-720);
+  --h-semantic-secondary-stroke-normal-selected: var(--h-palette-neutral-600);
+
+  --h-semantic-secondary-stroke-strong-default: var(--h-palette-neutral-240);
+  --h-semantic-secondary-stroke-strong-hovered: var(--h-palette-neutral-360);
+  --h-semantic-secondary-stroke-strong-pressed: var(--h-palette-neutral-480);
+
+  --h-semantic-secondary-stroke-heavy-default: var(--h-palette-neutral-320);
+  --h-semantic-secondary-stroke-heavy-hovered: var(--h-palette-neutral-440);
+  --h-semantic-secondary-stroke-heavy-pressed: var(--h-palette-neutral-560);
+
+  --h-semantic-secondary-stroke-inverse-default: var(--h-palette-neutral-840);
+  --h-semantic-secondary-stroke-inverse-hovered: var(--h-palette-neutral-720);
+  --h-semantic-secondary-stroke-inverse-pressed: var(--h-palette-neutral-600);
+
+  --h-semantic-cta-background-normal-default: var(--h-palette-green-600);
+  --h-semantic-cta-background-normal-hovered: var(--h-palette-green-300);
+  --h-semantic-cta-background-normal-pressed: var(--h-palette-green-900);
+  --h-semantic-cta-background-normal-selected: var(--h-palette-green-700);
+
+  --h-semantic-cta-background-strong-default: var(--h-palette-green-600);
+  --h-semantic-cta-background-strong-hovered: var(--h-palette-green-300);
+  --h-semantic-cta-background-strong-pressed: var(--h-palette-green-900);
+  --h-semantic-cta-background-strong-selected: var(--h-palette-green-700);
+
+  --h-semantic-cta-foreground-global-default: var(--h-palette-green-100);
+  --h-semantic-cta-foreground-global-hovered: var(--h-palette-green-200);
+  --h-semantic-cta-foreground-global-pressed: var(--h-palette-green-400);
+  --h-semantic-cta-foreground-global-selected: var(--h-palette-green-300);
+
+  --h-semantic-cta-stroke-global-default: var(--h-palette-green-500);
+  --h-semantic-cta-stroke-global-hovered: var(--h-palette-green-200);
+  --h-semantic-cta-stroke-global-pressed: var(--h-palette-green-700);
+  --h-semantic-cta-stroke-global-selected: var(--h-palette-green-600);
+
+  --h-semantic-link-global-global-default: var(--h-palette-blue-400);
+  --h-semantic-link-global-global-hovered: var(--h-palette-blue-200);
+  --h-semantic-link-global-global-pressed: var(--h-palette-blue-600);
+
+  --h-semantic-error-global-global-default: var(--h-palette-red-400);
+  --h-semantic-error-global-global-hovered: var(--h-palette-red-200);
+  --h-semantic-error-global-global-pressed: var(--h-palette-red-600);
+
+  --h-semantic-warning-global-global-default: var(--h-palette-orange-400);
+  --h-semantic-warning-global-global-hovered: var(--h-palette-orange-200);
+  --h-semantic-warning-global-global-pressed: var(--h-palette-orange-600);
+
+  --h-semantic-info-global-global-default: var(--h-palette-purple-400);
+  --h-semantic-info-global-global-hovered: var(--h-palette-purple-200);
+  --h-semantic-info-global-global-pressed: var(--h-palette-purple-600);
+
+  --h-semantic-disabled-background-global-default: var(--h-palette-neutral-240);
+  --h-semantic-disabled-foreground-global-default: var(--h-palette-neutral-360);
+  --h-semantic-disabled-stroke-global-default: var(--h-palette-neutral-240);
+
+  --h-semantic-focused-global-global-default: var(--h-palette-neutral-920);
+
+  --h-shadow-normal: rgba(255, 255, 255, 0.04);
+  --h-shadow-heavy: rgba(255, 255, 255, 0.08);
+  --h-shadow-strong: rgba(255, 255, 255, 0.12)
+}

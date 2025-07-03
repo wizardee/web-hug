@@ -1,0 +1,10 @@
+import { HPseudoState } from '../types/global';
+export declare const VAR_PREFIX = "--h";
+export declare const VAR_DIVIDER = "-";
+export type HComponentSize = 'xsm' | 'sm' | 'md' | 'lg' | 'xlg';
+export type SemanticTheme = 'primary' | 'secondary' | 'cta' | 'link' | 'disabled' | 'error' | 'warning' | 'positive' | 'info' | 'white' | 'black';
+export type SemanticTarget = 'global' | 'background' | 'foreground' | 'stroke';
+export type SemanticLevel = 'global' | 'normal' | 'strong' | 'heavy' | 'inverse';
+export type SemanticPseudo<T = never> = HPseudoState | T;
+export declare function getHeightVar(height: HComponentSize): string;
+export declare function getSemantic<T = never>(theme: SemanticTheme, target: SemanticTarget, level: SemanticLevel, pseudo: SemanticPseudo<T>, getVar?: boolean): string;

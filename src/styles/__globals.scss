@@ -1,0 +1,40 @@
+:focus-visible {
+  outline: none
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.z-tooltip {
+  z-index: 100;
+}
+
+.z-toast {
+  z-index: 1000;
+}
+
+.z-dialog {
+  z-index: 500;
+}
+
+.z-beak {
+  z-index: 99;
+}
+
+.z-dropdown {
+  z-index: 90;
+}
+
+.box-shadow-base {
+  box-shadow: 0 0 1px 0 var(--h-shadow-normal),
+  0 1px 4px 0 var(--h-shadow-heavy),
+  0 2px 8px 0 var(--h-shadow-strong)
+}
