@@ -129,7 +129,8 @@ export const MixedStates: Story = {
     components: { HCheckbox },
     setup() {
       const selectedItems = ref(['item2'])
-      return { selectedItems }
+      const disabledSelectedItems = ref(['item5'])
+      return { selectedItems, disabledSelectedItems }
     },
     template: `
       <div>
@@ -139,7 +140,7 @@ export const MixedStates: Story = {
           <HCheckbox text="미리 선택된 체크박스" value="item2" v-model:checkbox-model="selectedItems" />
           <HCheckbox text="원형 체크박스" value="item3" v-model:checkbox-model="selectedItems" :isCircle="true" />
           <HCheckbox text="비활성화된 체크박스 (체크 안됨)" value="item4" v-model:checkbox-model="selectedItems" :isDisabled="true" />
-          <HCheckbox text="비활성화된 체크박스 (체크됨)" value="item5" v-model:checkbox-model="['item5']" :isDisabled="true" />
+          <HCheckbox text="비활성화된 체크박스 (체크됨)" value="item5" v-model:checkbox-model="disabledSelectedItems" :isDisabled="true" />
         </div>
       </div>
     `,
