@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
+import { within, userEvent } from '@storybook/testing-library'
 import HButton from '@/components/button/HButton.vue'
 import type { HButtonProps } from '@/manage/types/components/button'
 
@@ -81,6 +82,30 @@ export const WithIcons: Story = {
     text: 'Icon Button',
     preIconName: 'icons_blank',
     postIconName: 'icons_arrow_arrowhead_right',
+  },
+}
+
+export const InteractiveTest: Story = {
+  args: {
+    theme: 'primary',
+    type: 'filled',
+    size: 'md',
+    round: 'roundedSquare',
+    text: 'Click Me!',
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const button = canvas.getByRole('button');
+    
+    // 버튼 클릭 테스트
+    await userEvent.click(button);
+    
+    // 호버 상태 테스트
+    await userEvent.hover(button);
+    await new Promise(resolve => setTimeout(resolve, 500));
+    
+    // 포커스 테스트
+    await userEvent.tab();
   },
 }
 

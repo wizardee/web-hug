@@ -3,6 +3,7 @@
           :class="_class"
           :styles="styles"
           tabindex="0"
+          role="button"
           @blur="toggle('focused',false)"
           @click="onClick"
           @focus="toggle('focused', true)"

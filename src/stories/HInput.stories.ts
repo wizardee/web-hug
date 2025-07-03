@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
+import { within, userEvent } from '@storybook/testing-library'
 import HInput from '@/components/input/HInput.vue'
 import type { HInputProps } from '@/manage/types/components/input'
 import { ref } from 'vue'
@@ -190,4 +191,49 @@ export const States: Story = {
       </div>
     `,
   }),
+}
+
+export const TypingTest: Story = {
+  args: {
+    label: 'Type Test',
+    placeholder: 'Type something...',
+    size: 'md',
+    type: 'text',
+  },
+  render: (args) => ({
+    components: { HInput },
+    setup() {
+      const inputModel = ref('')
+      return { args, inputModel }
+    },
+    template: `
+      <div style="width: 300px;">
+        <HInput v-bind="args" v-model:input-model="inputModel" data-testid="input-field" />
+        <p style="margin-top: 8px; font-size: 12px; color: #666;">
+          입력된 값: {{ inputModel }}
+        </p>
+      </div>
+    `,
+  }),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const input = canvas.getByTestId('input-field').querySelector('input');
+    
+    if (input) {
+      // 입력 필드 클릭 및 포커스
+      await userEvent.click(input);
+      
+      // 텍스트 입력
+      await userEvent.type(input, 'Hello Storybook!');
+      
+      // 잠시 대기
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      // 텍스트 지우기
+      await userEvent.clear(input);
+      
+      // 새로운 텍스트 입력
+      await userEvent.type(input, 'Interaction Test 성공!');
+    }
+  },
 }

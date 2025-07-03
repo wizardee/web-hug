@@ -40,6 +40,7 @@
   "devDependencies": {
     "@storybook/addon-docs": "^9.0.15",
     "@storybook/addon-onboarding": "^9.0.15",
+    "@storybook/testing-library": "^0.2.1",
     "@storybook/vue3-vite": "^9.0.15",
     "@types/lodash": "^4.17.17",
     "@types/node": "^22.15.24",
